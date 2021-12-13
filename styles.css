@@ -10,13 +10,16 @@
   
   .container {
     display: grid;
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
     grid-gap: 0em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     background-color: black;
     border: 2px solid black;
+    width: fit-content; 
+  /* To adjust the height as well */ 
+  height: fit-content;
  
   }
   
