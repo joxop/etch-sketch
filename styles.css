@@ -1,14 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
   }
   
-  #container {
+  .container {
     display: grid;
+    width: 400px;
+    height: 400px;
     grid-gap: 0em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     background-color: black;
+    border: 2px solid black;
+ 
   }
   
   .grid-item {
@@ -17,4 +26,30 @@
     text-align: center;
   }
 
- 
+ button{
+     height: 100px;
+     width: 100px;
+     margin: 20px;
+     border-radius: 24px;
+
+ }
+
+ button:hover{
+     background-color: darkgray;
+     
+ }
+
+ #wrapper{
+     border: 2px solid black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+ h1{
+     font-weight: 500;
+ }
+
+
+
