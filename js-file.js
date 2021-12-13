@@ -8,11 +8,11 @@ function makeRows(rows, cols){
     for (c=0; c<(rows * cols); c++){
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
-    }
+        cell.addEventListener("mouseover", function bgChange() {
+           const clr = "white";
+            cell.style.backgroundColor = clr;
+        });
+    };
+};
     
-}
-
-
-
-
-makeRows(10, 10);
+    makeRows(16, 16);

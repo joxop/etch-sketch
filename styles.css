@@ -17,8 +17,4 @@
     text-align: center;
   }
 
-  .grid-item:hover{
-      position: relative;
-      background-color: white;
-      animation-duration:1s;
-  }
+ 
