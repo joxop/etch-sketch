@@ -10,7 +10,7 @@ function makeRows(rows, cols){
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
         cell.addEventListener("mouseover", function(){
-            const clr = "blue";
+            const clr = "white";
              cell.style.backgroundColor = clr;
 
         });
