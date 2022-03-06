@@ -8,10 +8,11 @@ function makeRows(rows, cols){
     container.style.setProperty('--grid-cols', cols);
     for (c=0; c<(rows * cols); c++){
         let cell = document.createElement("div");
+        // cell.className="boxes"
         container.appendChild(cell).className = "grid-item";
         cell.addEventListener("mouseover", function(){
-            const clr = "white";
-             cell.style.backgroundColor = clr;
+            // const clr = "white";
+             cell.style.backgroundColor = "white";
 
         });
     };
